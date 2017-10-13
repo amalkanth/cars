@@ -1,0 +1,9 @@
+
+main()
+{
+int a;
+4*4=h*h*h;
+sum=3*3*3+a;
+print(sum);
+}
+

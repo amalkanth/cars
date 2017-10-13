@@ -1,0 +1,9 @@
+
+main()
+{
+int a;
+sq(4)=cub(h);
+sum=cub(3)+a;
+print(sum);
+}
+
