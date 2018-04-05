@@ -1,8 +1,12 @@
+***************************************
+title:sunflower
+author:amalkanth
+rollno:9
+*************************************
 #include<stdio.h>
 #include<graphics.h>
 #include<math.h>
 #include<stdlib.h>
-
 
 void bezierarc(int xin,int yin)
 {
@@ -15,7 +19,6 @@ for(t=0;t<1;t+=.0005){
  yt=pow(1-t,3)*y[0] + 3*t*pow(1-t,2)*y[1]+ 3*pow(t,2)*(1-t)*y[2] + pow(t,3)*y[3];
  putpixel(xt,yt,GREEN);
 }
-
 }
 
 void bgskeleton()
@@ -28,12 +31,6 @@ setcolor(WHITE);
 
 void flower(int x,int y)
 {
-/* setcolor(WHITE);
-ellipse(430-k,300-j,0,360,10+i,3+j);
-fillellipse(430-k,300-j,10+i,3+j);
-setcolor(RED);
-circle(430-k,300-j,3);
-fillellipse(430-k,300-j,3,3);*/
 setcolor(YELLOW);
 fillellipse(x+18,y,13,11);
 fillellipse(x,y-18,11,13);
@@ -49,7 +46,7 @@ else
 void drawsun(int i)
 {
  setcolor(RED);
-fillellipse(250+i*9,120+abs(i),15,15);
+fillellipse(310+i*9,120+abs(i),15,15);
 }
 
 int main()
@@ -58,21 +55,15 @@ int gd=DETECT,gm,i;
 initgraph(&gd,&gm,"");
 bgskeleton();
 bezierarc(320-(1.2*35),280+35);
-for(i=-35;i<36;i++)
+for(i=-23;i<30;i++)
 {
 setcolor(BLACK);
 fillellipse(300,230,300,300);
-delay(1000);
-setcolor(BLACK);
-drawsun(i);
 bgskeleton();
 bezierarc(320+(1.2*i),280+abs(i));
 flower(320+(1.2*i),280+abs(i));
-/*drawsun(i);
-delay(1000);
-setcolor(BLACK);
 drawsun(i);
-*/
+delay(1000);
 }
 getch();
 closegraph();

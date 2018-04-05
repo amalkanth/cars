@@ -1,8 +1,4 @@
-***************************************
-title:worm eating leaf
-author:amalkanth
-rollno:9
-*************************************
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
@@ -23,7 +19,6 @@ void main()
 {
  int gd=DETECT,gm;
  initgraph(&gd,&gm,"");
-
  double s;
  double x=10;
  double y=250,angle;

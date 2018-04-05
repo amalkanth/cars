@@ -62,18 +62,9 @@ for(i=-35;i<36;i++)
 {
 setcolor(BLACK);
 fillellipse(300,230,300,300);
-delay(1000);
-setcolor(BLACK);
-drawsun(i);
-bgskeleton();
-bezierarc(320+(1.2*i),280+abs(i));
-flower(320+(1.2*i),280+abs(i));
-/*drawsun(i);
-delay(1000);
-setcolor(BLACK);
-drawsun(i);
-*/
-}
+
+
+ }
 getch();
 closegraph();
 return 0;
