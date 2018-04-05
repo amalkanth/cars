@@ -1,3 +1,8 @@
+***************************************
+title:bucket
+author:amalkanth
+rollno:9
+*************************************
 #include<stdio.h>
 #include<graphics.h>
 #include<math.h>

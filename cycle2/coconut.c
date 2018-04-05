@@ -1,3 +1,8 @@
+***************************************
+title:coconut
+author:amalkanth
+rollno:9
+*************************************
 #include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
@@ -77,7 +82,7 @@ setcolor(GREEN);
 line(100,100,100,40);
 fillellipse(105,100,8,8);
 fillellipse(111,100,8,8);
-fillellipse(95,100,8,8);
+//fillellipse(95,100,8,8);
 //fillellipse(99,105,8,8);
 //fillellipse(105,105,8,8);
 fillellipse(113,105,8,8);
@@ -102,8 +107,6 @@ int x2[4]={40,50,80,100};
 int y2[4]={50,45,60,100};
 int x3[4]={100,120,140,160};
 int y3[4]={100,60,45,50};
-int x4[4]={500,140,160,180};
-int y4[4]={100,50,40,30};
 setcolor(GREEN);
 line(100,100,100,40);
 
@@ -111,7 +114,6 @@ bezier(x,y);
 bezier(x1,y1);
 bezier(x2,y2);
 bezier(x3,y3);
-bezier(x4,y4);
 }
 
 
@@ -131,7 +133,7 @@ line(120,390-i+5,110,398-i-5);
 line(120,375-i+5,110,375-i-5);//hands
 line(120,375-i+5,110,368-i-5);
 line(117,380-i+5,123,380-i+5);
-delay(10);
+delay(100);
 cleardevice();
 drawtree();
 setcolor(WHITE);
@@ -224,7 +226,7 @@ drawtree();
 drawman();
 climb();
 drawtop();
-delay(800);
+delay(8000);
 
 }
 
